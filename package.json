@@ -1,0 +1,19 @@
+{
+  "name": "html",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Hello, first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Farid Aliev",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^9.7.0",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}

@@ -1,0 +1,103 @@
+/*Укажем шрифт для тега <body> - родителя всех элементов. Так удобнее.
+*/
+body {font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 50px;
+        font-family: Verdana;
+    font-weight: bold;
+}
+main {
+    text-align: justify;
+}
+p {
+    font-size: 14px !important;
+    
+}
+.finding {
+    font-size: 20px;
+
+}
+.picture {
+    text-align: center;
+}
+p.greeting {
+    font-size: 24px;
+    text-align: right;
+}
+p.rights {
+    text-align: right;
+}
+.picture img {
+    width: 50%;
+}
+address {
+    text-align: right;
+}
+span.name {
+    font-weight: normal;
+}
+.time {
+    margin-left: 30pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    font-size: 12pt;
+}
+footer {
+    text-align: right;
+}
+.bigger {
+    font-size: 16pt;
+}
+table.pricelist th, table.pricelist td {
+    border: grey thin solid;
+    padding: 4px;
+}
+table.catalog {
+    border-collapse: collapse;
+}
+table.catalog td {
+    border-top: black thin dotted;
+    border-bottom: black thin dotted;
+    padding: 10px;
+}
+table.catalog img {
+    width: 200px;
+}
+table.pricelist thead th {
+    color: white;
+    background-color: grey;
+}
+table.pricelist tfoot td{
+    text-align: right;
+    font-style: italic;
+}
+nav {
+    float: left;
+    width: 150px;
+    margin: 10px 30px 10px 0px;
+    padding: 10px;
+    border: black medium double;
+    border-radius: 10px;
+}
+nav div {
+    font-size: 20pt;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.catalog tr:first-child td {
+    border-top: none;
+}
+table.catalog tr:last-child td {
+    border-bottom: none;
+}
+table.catalog td p:first-of-type::first-letter {
+    font-size: 24pt;
+}
+table.pricelist tbody th[colspan] {
+    text-align: center;
+}
+table.pricelist tbody td:last-child:not(:only-child) {
+    background-color: lightgrey;
+}

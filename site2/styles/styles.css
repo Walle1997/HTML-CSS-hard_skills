@@ -1,9 +1,14 @@
 body {
     margin: 0px;
 }
-.gallery-item img {
-    width: 100%;
+.gallery-item img {width: 100%;}
+body.noscroll {overflow: hidden;}
+a[target=gallery] {font-size: 16pt;}
+
+body  {
+    counter-reset: example;
 }
-a[target=gallery] {
-    font-size: 16pt;
+a[target=gallery]::before {
+    counter-increment: example;
+    content: counter(example) ". ";
 }

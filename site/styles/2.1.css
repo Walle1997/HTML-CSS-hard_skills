@@ -2,142 +2,150 @@
     font-family: "Caviar Dreams";
     src: url(../fonts/CaviarDreams.ttf);
 }
+
 @font-face {
     font-family: "Caviar Dreams";
     src: url(../fonts/Caviar_Dreams_Bold.ttf);
     font-weight: bold;
 }
+
 @font-face {
     font-family: "Caviar Dreams";
     src: url(../fonts/CaviarDreams_Italic.ttf);
     font-style: italic;
 }
+
 @font-face {
     font-family: "Caviar Dreams";
     src: url(../fonts/CaviarDreams_BoldItalic.ttf);
     font-weight: bold;
     font-style: italic;
 }
+
 table.catalog h3 {
     font-family: "Caviar Dreams";
     font-size: 20pt;
 }
-table.catalog h3::after {
-    content: ":";
-}
+
+table.catalog h3::after {content: ":";}
 /*Укажем шрифт для тега <body> - родителя всех элементов. Так удобнее.
 */
-body {font-family: Arial, Helvetica, sans-serif;
+body {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
+
 h1 {
     font-size: 50px;
-        font-family: Verdana;
+    font-family: Verdana;
     font-weight: bold;
     text-shadow: 3pt 3pt 5pt darkgrey;
 }
+
 h3 {
     text-transform: capitalize;
     font-variant: small-caps;
     letter-spacing: 2pt;
 }
-main {
-    text-align: justify;
-}
-p {
-    font-size: 14pt !important;
-        
-}
+
+main {text-align: justify;}
+
+p {font-size: 14pt !important;}
+
 table.catalog td p:first-of-type::first-letter {
     font-size: 24pt;
     vertical-align: top;
 }
-.finding {
-    font-size: 20px;
 
-}
-.picture {
-    text-align: center;
-}
+.finding {font-size: 20px;}
+
+.picture {text-align: center;}
+
 p.greeting {
     font-size: 24px;
     text-align: right;
 }
-p.rights {
-    text-align: right;
-}
+
+p.rights {text-align: right;}
+
 .picture img {
-    width: 50%;
+    width: 67%;
+    min-width: 500px;
+    max-width: 700px;
 }
-address {
-    text-align: right;
-}
-span.name {
-    font-weight: normal;
-}
+
+address {text-align: right;}
+
+span.name {font-weight: normal;}
+
 .time {
     margin-left: 30pt;
     margin-top: 5pt;
     margin-bottom: 5pt;
     font-size: 12pt;
 }
+
 footer {
     text-align: right;
+    border-top-width: 2pt;
+    border-top-style: dotted;
+    border-left-color: lightgrey;
+    min-width: 300px;
+    max-width: none;
+    width: 50%;
+    margin-left: 50%;
 }
-.bigger {
-    font-size: 16pt;
-}
+
+.bigger {font-size: 16pt;}
+
 table.pricelist th, table.pricelist td {
     border: grey thin solid;
     padding: 4px;
 }
-table.catalog {
-    border-collapse: collapse;
-}
+
+table.catalog {border-collapse: collapse;}
+
 table.catalog td {
     border-top: black thin dotted;
     border-bottom: black thin dotted;
     padding: 10px;
 }
-table.catalog img {
-    width: 200px;
-}
+
+table.catalog img {width: 200px;}
+
 table.pricelist thead th {
     color: white;
     background-color: grey;
 }
+
 table.pricelist tfoot td{
     text-align: right;
     font-style: italic;
 }
+
 nav {
     float: left;
     width: 150px;
-    margin: 10px 30px 10px 0px;
+    margin: 10px 40px 20px 0px;
     padding: 10px;
-    border: black medium double;
-    border-radius: 10px;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px 5px darkgrey,
+    0px 0px 5px 5px darkgrey inset;
 }
+
 nav div {
     font-size: 20pt;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-table.catalog tr:first-child td {
-    border-top: none;
-}
-table.catalog tr:last-child td {
-    border-bottom: none;
-}
-table.catalog td p:first-of-type::first-letter {
-    font-size: 24pt;
-}
-table.pricelist tbody th[colspan] {
-    text-align: center;
-}
-table.pricelist tbody td:last-child:not(:only-child) {
-    background-color: lightgrey;
-}
-body header h1::first-letter {
-    text-transform: uppercase;
-}
+table.catalog tr:first-child td {border-top: none;}
+
+table.catalog tr:last-child td {border-bottom: none;}
+
+table.catalog td p:first-of-type::first-letter {font-size: 24pt;}
+
+table.pricelist tbody th[colspan] {text-align: center;}
+
+table.pricelist tbody td:last-child:not(:only-child) {background-color: lightgrey;}
+
+body header h1::first-letter {text-transform: uppercase;}

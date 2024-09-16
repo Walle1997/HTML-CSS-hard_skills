@@ -74,6 +74,15 @@ nav {
     padding: 10px;
     box-shadow: 0px 0px 5px 5px darkgrey, 0px 0px 5px 5px darkgrey inset;
 }
+nav a:link, nav a:visited {
+    color: darkred;
+    text-decoration: none;
+}
+
+nav a:active, nav a:hover {
+    color: darksalmon;
+    text-decoration: none;
+}
 nav div {
     font-size: 20pt;
     margin-top: 5px;

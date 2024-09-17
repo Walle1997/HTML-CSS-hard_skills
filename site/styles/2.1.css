@@ -18,7 +18,11 @@
     font-weight: bold;
     font-style: italic;
 }
-body {font-family: Arial;}
+body {
+    font-family: Arial;
+    background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+}
+
 h1 {
     font-size: 32pt;
     font-family: Verdana;

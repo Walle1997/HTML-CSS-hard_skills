@@ -1,27 +1,30 @@
 body {
     margin: 0px;
+    counter-reset: ph_links;
+    background-image: url(../images/bg3.jpg), url(../images/bg2.jpg), url(../images/bg1.jpg), url(../images/main_bg.jpg);
+    background-size: 60pt, 60pt, 60pt, cover;
+    background-attachment: fixed;
+    background-position: 10pt 144pt, 10pt 76pt, 10pt 8pt, center;
+    background-repeat: no-repeat;
 }
 .gallery-item img {width: 100%;}
 body.noscroll {overflow: hidden;}
 a[target=gallery] {font-size: 16pt;}
-
-body  {
-    counter-reset: example;
-}
 a[target=gallery]::before {
-    counter-increment: example;
-    content: counter(example) ". ";
+    counter-increment: ph_links;
+    content: counter(ph_links) ". ";
 }
 header h1 {
     font: bold 42pt Verdana, sans-serif;
     text-align: right;
     color: white;
-    background-color: black;
     margin-top: 8pt;
     margin-right: 8pt;
     margin-left: 80pt;
     padding-right: 12pt;
+    background-image: radial-gradient(closest-side at 25pt 50%, black, white, black, white, black);
 }
+main p {font: 12pt Arial, sans-serif;}
 main {
     margin-left: 80pt;
     padding-left: 20pt;
@@ -29,7 +32,4 @@ main {
     border-left-width: 20pt;
     border-left-style: solid;
     border-left-color: grey;
-}
-main p {
-    font: 12pt Arial, sans-serif;
 }

@@ -87,10 +87,13 @@ nav a:active, nav a:hover {
     color: darksalmon;
     text-decoration: none;
 }
-nav div {
+nav div, nav a {
     font-size: 20pt;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+nav a {
+    display: block;
 }
 table.catalog tr:first-child td {
     border-top: none;

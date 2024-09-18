@@ -33,3 +33,17 @@ main {
     border-left-style: solid;
     border-left-color: grey;
 }
+
+div.tbl {display: block;}
+
+div.tbl > div {display: table-row;}
+
+div.tbl > div > * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+div.tbl a {
+    display: block;
+    margin: 10px 10px 10px 10px;
+}

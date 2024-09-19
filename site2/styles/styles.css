@@ -86,6 +86,8 @@ nav div {
 
 div#discography {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 div#discography > div {
@@ -93,4 +95,5 @@ div#discography > div {
     padding: 5px;
     margin: 5px;
     text-align: center;
+    width: 120px;
 }

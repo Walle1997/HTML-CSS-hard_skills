@@ -21,23 +21,22 @@
 body {
     font-family: Arial;
     background-image: repeating-linear-gradient(to right, white 0px, bisque 5px, white 10px);
+    margin: 0px;
 }
 
-h1 {
-    font-size: 32pt;
-    font-family: Verdana;
-    text-shadow: 3pt 3pt 5pt darkgrey;
+header {
+    background-color: white;
+    height: 80pt;
+    margin-bottom: 20pt;
 }
+
+
 p {font-size: 14pt !important;}
 p.greeting {font-size: 24pt;}
-.picture img {
-    width: 67%;
-    min-width: 500px;
-    max-width: 700px;
-}
-h1 em {font-weight: normal;}
+
+
 .advertising {margin-left: 30pt;}
-header {text-align: center;}
+
 main {text-align: justify;}
 footer {
     text-align: right;
@@ -156,4 +155,45 @@ input:valid {
 input:invalid {
     background-color: red;
     border-color: red;
+}
+
+.pos1, .pos2, .pos3 {
+    position: absolute;
+    left: 0pt;
+    top: 0pt;
+    width: 140pt;
+}
+
+.pos1 img {
+    height: 80pt;
+}
+
+.pos2 {
+    left: 140pt;
+    top: 29pt;
+    right: 0pt;
+}
+
+.pos2 h1 {
+    font: bold italic 42pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 10pt;
+    margin: 0px;
+    background-color: darksalmon;
+}
+
+.pos3 {
+    left: 140pt;
+    top: 4pt;
+    right: 70pt;
+}
+
+.pos3 h1 {
+    font: bold 24pt Verdana;
+    text-transform: uppercase;
+    text-align: right;
+    letter-spacing: 6pt;
+    margin: 0px;
+    color: darksalmon;
 }

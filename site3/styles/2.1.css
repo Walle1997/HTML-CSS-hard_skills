@@ -32,7 +32,6 @@ body {
 header {
   background-color: white;
   height: 80pt;
-  margin-bottom: 20pt;
 }
 
 p {
@@ -48,7 +47,6 @@ p.greeting {
 
 main {
   text-align: justify;
-  margin-left: 210px;
 }
 footer {
   text-align: right;
@@ -93,9 +91,8 @@ table.pricelist tfoot td {
   font-style: italic;
 }
 nav {
-  float: left;
   width: 150px;
-  margin: 10px 40px 20px 0px;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
 }
 
@@ -257,4 +254,19 @@ input:invalid {
   font-family: Verdana;
   font-weight: bold;
   text-align: center;
+}
+
+div#tablecont {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+div#tablecont > div {
+  display: table-row;
+}
+
+div#tablecont > div > * {
+  display: table-cell;
+  vertical-align: top;
 }

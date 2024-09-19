@@ -44,6 +44,9 @@ footer {
     width: 50%;
     min-width: 300px;
     margin-left: 50%;
+    background-color: white;
+    height: 120pt;
+    position: relative;
 }
 .advertising div {
     font-size: 12pt;
@@ -157,8 +160,11 @@ input:invalid {
     border-color: red;
 }
 
-.pos1, .pos2, .pos3 {
+.pos1, .pos2, .pos3, .pos4, .pos5 {
     position: absolute;
+}
+
+.pos1 {
     left: 0pt;
     top: 0pt;
     width: 140pt;
@@ -196,4 +202,22 @@ input:invalid {
     letter-spacing: 6pt;
     margin: 0px;
     color: darksalmon;
+}
+
+.pos4 {
+    top: 0pt;
+    right: 20pt;
+}
+
+.pos5 {
+    top: 28pt;
+    left: 30pt;
+    width: 100pt;
+    background-color: yellow;
+}
+
+.pos5 p {
+    font-family: Verdana;
+    font-weight: bold;
+    text-align: center;
 }

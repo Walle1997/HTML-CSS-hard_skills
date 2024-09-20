@@ -37,6 +37,7 @@ header h1 {
     white,
     black
   );
+  transform: skewX(5deg);
 }
 main p {
   font: 12pt Arial, sans-serif;
@@ -101,6 +102,7 @@ nav a:hover {
   color: white;
   background-color: blue;
   text-decoration: none;
+  transform: scale(1.2, 1.2) translateY(4px);
 }
 
 nav div {
@@ -120,6 +122,11 @@ div#discography > div {
   margin: 5px;
   text-align: center;
   width: 120px;
+  transform: rotate(5deg);
+}
+
+div#discography > div:hover {
+  transform: rotate(-5deg) translateY(-10px);
 }
 
 footer {

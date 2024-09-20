@@ -121,3 +121,15 @@ div#discography > div {
   text-align: center;
   width: 120px;
 }
+
+footer {
+  margin-left: 120pt;
+  margin-right: 10pt;
+}
+footer p {
+  font: italic 12pt Arial, sans-serif;
+  color: white;
+  background-color: grey;
+  text-align: right;
+  margin-bottom: 0px;
+}

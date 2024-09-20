@@ -49,6 +49,7 @@ p.greeting {
 main {
   text-align: justify;
   margin-left: 210px;
+  padding-right: 10px;
 }
 footer {
   text-align: right;

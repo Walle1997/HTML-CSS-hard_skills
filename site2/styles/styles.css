@@ -95,6 +95,7 @@ nav a:visited {
   color: blue;
   background-color: white;
   text-decoration: none;
+  transition-duration: 0.5s;
 }
 
 nav a:active,
@@ -103,6 +104,7 @@ nav a:hover {
   background-color: blue;
   text-decoration: none;
   transform: scale(1.2, 1.2) translateY(4px);
+  transition-duration: 0.5s;
 }
 
 nav div {
@@ -123,10 +125,12 @@ div#discography > div {
   text-align: center;
   width: 120px;
   transform: rotate(5deg);
+  transition: 0.2s linear;
 }
 
 div#discography > div:hover {
   transform: rotate(-5deg) translateY(-10px);
+  transition: 0.1s linear;
 }
 
 footer {

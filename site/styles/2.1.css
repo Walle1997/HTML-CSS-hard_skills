@@ -18,6 +18,35 @@
   font-weight: bold;
   font-style: italic;
 }
+@keyframes navlinks {
+  60% {color: black;}
+  100% {
+    color: darksalmon;
+    transform: translateX(10px);
+  }
+}
+@keyframes footer {
+  from {
+    background-color: white;
+    left: -100pt;
+    transform: scale(0.2, 0.2);
+  }
+  33% {
+    left: 30pt;
+    background-color: white;
+    transform: scale(0.2, 0.2);
+  }
+  67% {
+    left: 30pt;
+    background-color: white;
+    transform: scale(1, 1);
+  }
+  to {
+    background-color: yellow;
+    left: 30pt;
+    transform: scale(1, 1);
+  }
+}
 body {
   font-family: Arial;
   background-image: repeating-linear-gradient(
@@ -108,8 +137,11 @@ nav a:visited {
 
 nav a:active,
 nav a:hover {
-  color: darksalmon;
   text-decoration: none;
+  animation-name: navlinks;
+  animation-duration: 0.5s;
+  transform: translateX(10px);
+  animation-fill-mode: forwards;
 }
 nav div,
 nav a {
@@ -251,7 +283,7 @@ input:invalid {
   top: 28pt;
   left: 30pt;
   width: 100pt;
-  background-color: yellow;
+  animation: footer 1.5s 2s both;
 }
 
 .pos5 p {

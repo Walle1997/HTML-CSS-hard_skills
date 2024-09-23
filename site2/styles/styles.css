@@ -144,3 +144,37 @@ footer p {
   text-align: right;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 400px) {
+  body {background: transparent;}
+  header h1, nav, main, footer {margin-left: 8pt;}
+  header h1 {
+      font-size: 28pt;
+      background: black;
+  }
+  nav {flex-direction: column;}
+  main {
+      padding-left: 0pt;
+      border-left: none;
+  }
+  nav a:active, nav a:hover {
+      transform: translateY(4px);
+  }
+  div#discography > div {border: 1px solid black;}
+  iframe {width: 100%;}
+  div.tbl, div.tbl > div, div.tbl > div > * {
+    display: block;
+}
+}
+@media print {
+  body {background: transparent;}
+  nav {display: none;}
+  header h1, main, footer {margin-left: 8pt;}
+  header, footer {background: transparent;}
+  main {
+    padding-left: 0pt;
+    border-left: none;
+  }
+  header h1, footer p {color: black;}
+  header  h1 {letter-spacing: 10pt;}
+  footer{border-top: 1px solid black;}
+}

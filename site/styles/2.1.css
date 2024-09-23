@@ -19,7 +19,9 @@
   font-style: italic;
 }
 @keyframes navlinks {
-  60% {color: black;}
+  60% {
+    color: black;
+  }
   100% {
     color: darksalmon;
     transform: translateX(10px);
